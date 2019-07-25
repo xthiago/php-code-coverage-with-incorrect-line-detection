@@ -1,0 +1,40 @@
+{
+    "name": "xthiago/php-code-coverage-with-incorrect-line-detection",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thiago Rodrigues",
+            "email": "me@xthiago.com",
+            "homepage": "https://xthiago.com",
+            "role": "Developer"
+        }
+    ],
+
+    "minimum-stability" : "stable",
+
+    "autoload": {
+        "psr-4": {
+            "Xthiago\\": [
+                "src/"
+            ]
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Xthiago\\": [
+                "tests/"
+            ]
+        }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^8.2.4"
+    },
+
+    "require": {
+        "php": ">=7.4",
+        "beberlei/assert": "^3.2.1"
+    }
+}

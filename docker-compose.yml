@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  php:
+    build:
+      context: .
+      target: dev
+    image: phpincorrectlinedetection
+    volumes:
+      - .:/var/www/app
+    command: php -S 0.0.0.0:8000 -t src/
